@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lila atlas</title>
+<style>body{margin:0;background:#060912;color:#e8f0ff;font:16px/1.6 system-ui,-apple-system,sans-serif;display:grid;place-items:center;min-height:100vh}a{color:#a9bbdb}</style>
+</head>
+<body>
+<p>Opening the atlas. <a href="lila-map-locked.html">Desktop</a> · <a href="lila-map-locked-mobile.html">Phone</a></p>
+<script>
+(function(){
+  var phone = window.matchMedia("(max-width: 700px)").matches || (navigator.maxTouchPoints > 0 && Math.min(screen.width, screen.height) < 700);
+  location.replace(phone ? "lila-map-locked-mobile.html" : "lila-map-locked.html");
+})();
+</script>
+</body>
+</html>
